@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fcd34d;
+}
+/*nav*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  padding-top: 15px;
+}
+li {
+  display: inline;
+  list-style: none;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
+li a:hover {
+  border-bottom: 2px solid #f97316;
+}
+/*nav end*/
+/*header start */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  margin-top: 2rem;
+}
+.main-headings {
+  font-size: 4rem;
+  font-family: "Outfit", sans-serif;
+  transform: translateY(-40px);
+  color: #00000097;
+  line-height: 5rem;
+}
+.main-headings span {
+  color: black;
+}
+.primary-headings {
+  max-width: 500px;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  margin-bottom: 1rem;
+  color: #716d6d;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.btn-fill {
+  background: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.btn-fill:hover {
+  background: white;
+  border: 1px solid #f97316;
+  color: #f97316;
+}
+.btn-outline {
+  border: 2px solid #f97316;
+  color: #f97316;
+  background: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.btn-outline:hover {
+  background: #f97316;
+  color: white;
+}
+.img-container {
+  border-radius: 50%;
+  background: white;
+  box-shadow: 4px 7px 5px 2px #f97316;
+}
+.header-img {
+  border-radius: 100%;
+  background-position: top;
+  background-size: cover;
+  width: 520px;
+  height: 520px;
+  overflow: hidden;
+}
+/*HEADER END*/
