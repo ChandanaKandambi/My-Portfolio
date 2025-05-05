@@ -6,7 +6,9 @@
   box-sizing: border-box;
 }
 body {
-  background: #fcd34d;
+  background-image: url("spectrum-gradient.svg");
+  background-repeat: repeat;
+  background-size: cover; /* or contain, or a specific size */
 }
 /*nav*/
 nav {
@@ -56,14 +58,14 @@ header {
   font-family: "Barlow", sans-serif;
   line-height: 25px;
   margin-bottom: 1rem;
-  color: #716d6d;
+  color: white;
 }
 a {
   text-decoration: none;
   color: white;
 }
 .btn-fill {
-  background: #f97316;
+  background: #00000097;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -73,19 +75,19 @@ a {
 }
 .btn-fill:hover {
   background: white;
-  border: 1px solid #f97316;
-  color: #f97316;
+  border: 1px solid #00000097;
+  color: #00000097;
 }
 .btn-outline {
-  border: 2px solid #f97316;
-  color: #f97316;
+  border: 2px solid #00000097;
+  color: #00000097;
   background: transparent;
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
 .btn-outline:hover {
-  background: #f97316;
+  background: #00000097;
   color: white;
 }
 .img-container {
@@ -102,3 +104,80 @@ a {
   overflow: hidden;
 }
 /*HEADER END*/
+/*Section one start*/
+
+.section-one-container {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+  margin-top: 8rem;
+}
+
+.img-section-one {
+  border-radius: 50%;
+  background: white;
+  box-shadow: 4px 7px 5px 2px #f97316;
+}
+.section-one-container img {
+  border-radius: 100%;
+  background-position: top;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.section-one-container .main-headings {
+  font-size: 2.5rem;
+  font-family: "Outfit", sans-serif;
+  transform: translateY(-40px);
+  color: #00000097;
+  line-height: 4rem;
+}
+/*section 2 start*/
+.section-two-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  margin: 0 auto;
+}
+.project {
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  width: 50%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the selected effect */
+}
+.project .project-lines {
+  margin: 25px;
+}
+.project-img {
+  width: 350px;
+  height: 400px;
+  overflow: auto;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+.project-img img {
+  display: block;
+  max-width: 100%;
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow around the image */
+  cursor: pointer;
+}
+
+/*products section end*/
